@@ -41,6 +41,11 @@ class Card
         return $this->value > $card->getValue();
     }
 
+    #[Pure] public function isEqual(Card $card) :bool
+    {
+        return $this->value === $card->getValue();
+    }
+
     /**
      * @return int
      */
